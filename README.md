@@ -14,8 +14,14 @@ loop:
 
 If you manually implement your own drawing algorithm you can get a 100x speedup by checking the color distance *before* drawing. This lets you work with one image (if the color distance is worse just dont apply the change). I wrote this to mess with Pillow so I wasn't really concerned with performance.
 
-With enough iterations you can make any image look pretty using this method.
+
+Here's an example using line shapes:
 
 ![lines](https://i.imgur.com/SQmNVvv.gif)
 
+
+Here's an example using ellipse shapes:
+
 ![ellipses](https://i.imgur.com/es8Z9mh.gif)
+
+With enough iterations you can make any image look pretty using this method.
